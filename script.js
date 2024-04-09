@@ -5,7 +5,7 @@ const DateId = document.querySelector('#DateID')
 
 
 const OutPutCode = document.querySelector('.Code');
-const OutPutDate = document.querySelector('.date');
+const OutPutDate = document.querySelector('.Date');
 
 
 const btn = document.querySelector('.btn')
@@ -27,10 +27,10 @@ btn.addEventListener('click', DisplayOut);
 function DisplayOut(){
 
      OutPutCode.innerHTML = ProdCode.value;
+     OutPutDate.innerHTML = date;
      DateId.value = date;
-    console.log("Working date")
     
-
+    console.log("Working date")
   
 }
 
