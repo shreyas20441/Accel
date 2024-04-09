@@ -19,20 +19,14 @@ const randomDate = Math.floor(Math.random() * (10 -5  + 1)) + 5;
 const date = new Date(`2024, ${randomDate}`);
 //now i have taken all the outputs
 
-btn.addEventListener('click', DisplayOut);
+btn.addEventListener('click', ()=>{
+
+    OutPutCode.innerHTML = ProdCode.value;
+    DateId.value = date;
+    OutPutDate.innerHTML = date;
+});
 
 
-
-
-function DisplayOut(){
-
-     OutPutCode.innerHTML = ProdCode.value;
-     OutPutDate.innerHTML = date;
-     DateId.value = date;
-    
-    console.log("Working date")
-  
-}
 
 console.log(date);
 
