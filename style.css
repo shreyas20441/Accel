@@ -63,8 +63,17 @@ body .main{
 
 
 
-@media (max-width : 689px) {
+@media (max-width : 680px) {
 
+    body{
+        margin:  0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+
+        overflow-x: hidden;
+
+    }
     .hero .Date #DateID{
         margin-top: 10px;
         width: 390px;
