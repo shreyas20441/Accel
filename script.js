@@ -35,6 +35,7 @@ btn.addEventListener('click', ()=>{
         month+=1;
 
         console.log(month, year, RanDay);
+        DateId.value = ` ${RanDay} / ${month} / ${year}`;
        
      
     }
@@ -44,7 +45,7 @@ btn.addEventListener('click', ()=>{
     ProdCode.value = "";
   
     OutPutCode.innerHTML = ProdCode.value;
-    DateId.value = ` ${RanDay} / ${month} / ${year}`;
+   
 
     console.log(customeDate)
    
