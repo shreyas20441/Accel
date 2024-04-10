@@ -14,9 +14,9 @@ const btn = document.querySelector('.btn')
 
 
 
-let RanDate;
+var RanDay;
 
-let date;
+var customeDate;
 
 //now i have taken all the outputs
 
@@ -25,8 +25,18 @@ btn.addEventListener('click', ()=>{
    
 
     if(ProdCode.value != ""){
-        RanDate = Math.floor(Math.random() * (10 -5  + 1)) + 5;
-        date = new Date(`2024, ${RanDate}`);
+        RanDay = Math.floor(Math.random() * (30 - 11  + 1)) + 11;
+    
+        customeDate = new Date(2024, 3 , RanDay);
+
+        var year = customeDate.getFullYear();
+        var month = customeDate.getMonth();
+
+        month+=1;
+
+        console.log(month, year, RanDay);
+       
+     
     }
 
   
@@ -34,11 +44,12 @@ btn.addEventListener('click', ()=>{
     ProdCode.value = "";
   
     OutPutCode.innerHTML = ProdCode.value;
-    DateId.value = date;
+    DateId.value = ` ${RanDay} / ${month} / ${year}`;
+
+    console.log(customeDate)
    
 });
 
 
 
-console.log(date);
 
